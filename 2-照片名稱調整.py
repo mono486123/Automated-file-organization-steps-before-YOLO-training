@@ -25,15 +25,15 @@
 import os
 
 # 設定檔案所在的目錄
-directory = r"E:\yolov7\data\datasets1\照片分類\Toyota\Yaris"  # 將這裡的路徑替換為您的目錄路徑
-start_number = 1776  # 開始的數字
+directory = r"E:\yolov7\data\datasets1\胡蘿蔔"  # 將這裡的路徑替換為您的目錄路徑
+start_number = 0  # 開始的數字
 
 # 獲取目錄中的所有檔案
 files = os.listdir(directory)
 
 # 迭代處理每個檔案
 for old_filename in files:
-    if old_filename.upper().endswith(".JPG"):  # 確保只處理 .JPG 檔案，忽略大小寫
+    if old_filename.upper().endswith((".JPG","JPEG")):  # 確保只處理 .JPG 檔案，忽略大小寫
         new_number = start_number
         new_filename = "{:02d}.jpg".format(new_number)
         new_filepath = os.path.join(directory, new_filename)

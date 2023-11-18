@@ -2,8 +2,8 @@ import subprocess
 
 def run_yolo_detection():
     # 使用絕對路徑指定detect.py的位置
-    command = r'python E:\yolov7\detect.py --weights "E:\yolov7\runs\train\yolov7-custom23\weights\best.pt" --source "E:\yolov7\inference\images\03.jpg" --save-txt'
-    
+    command = r'python E:\yolov7\detect.py --weights "E:\yolov7\yolov7.pt" --source "E:\yolov7\inference\images\carrot" --save-txt'
+    ##湖羅
     try:
         # 使用subprocess模組執行命令行指令
         subprocess.run(command, shell=True, check=True)
@@ -18,4 +18,4 @@ if __name__ == "__main__":
 
 
 
-#anaconda環境激活方法>>  Set-Location -Path "E:\yolov7"  >>conda env list>>conda activate my_yolo_env(D:\Anaconda\envs\torch)>>conda activate D:\Anaconda\envs\torch
+#anaconda環境激活方法>>  Set-Location -Path "E:\yolov7"       >>conda env list>>conda activate my_yolo_env(D:\Anaconda\envs\torch)>>conda activate D:\Anaconda\envs\torch

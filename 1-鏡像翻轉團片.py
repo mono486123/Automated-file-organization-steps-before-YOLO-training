@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # 要處理的原始圖片所在文件夾路徑
-input_folder = r"E:\yolov7\data\datasets1\照片分類\Toyota\Corolla Altis 2.0"
+input_folder = r"E:\yolov7\data\datasets1\胡蘿蔔"
 
 # 存儲鏡像翻轉後的圖片的文件夾路徑
 output_folder = input_folder
